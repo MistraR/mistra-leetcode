@@ -1,4 +1,4 @@
-package com.mistra.leetcode.array;
+package com.mistra.leetcode.array.easy;
 
 import java.util.Arrays;
 
