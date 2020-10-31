@@ -1,4 +1,4 @@
-package com.mistra.leetcode.easy;
+package com.mistra.leetcode.array.easy;
 
 /**
  * @author Mistra
