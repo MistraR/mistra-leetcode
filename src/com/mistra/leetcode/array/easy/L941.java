@@ -5,6 +5,11 @@ package com.mistra.leetcode.array.easy;
  * @ Version: 1.0
  * @ Time: 2020/11/3 10:52 下午
  * @ Description:
+ *
+ * 有效的山脉数组
+ * 输入：[0,3,2,1]
+ * 输出：true
+ *
  * @ Copyright (c) Mistra,All Rights Reserved.
  * @ Github: https://github.com/MistraR
  * @ CSDN: https://blog.csdn.net/axela30w
