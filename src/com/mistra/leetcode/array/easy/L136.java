@@ -19,6 +19,7 @@ package com.mistra.leetcode.array.easy;
  * <p>
  * 输入: [4,1,2,1,2]
  * 输出: 4
+ * 关联L442
  * @ Copyright (c) Mistra,All Rights Reserved.
  * @ Github: https://github.com/MistraR
  * @ CSDN: https://blog.csdn.net/axela30w
