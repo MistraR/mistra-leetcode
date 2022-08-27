@@ -1,6 +1,7 @@
 package com.mistra.leetcode.array.easy;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * @author Mistra
@@ -15,7 +16,8 @@ public class L1 {
 
     public static void main(String[] args) {
         int[] arr = new int[]{2, 7, 11, 15};
-        System.out.println(twoSum(arr, 9).toString());
+        System.out.println(twoSum(arr, 9));
+        System.out.println(twoSum2(arr, 22));
     }
 
     public static int[] twoSum(int[] nums, int target) {
@@ -28,4 +30,29 @@ public class L1 {
         }
         return new int[0];
     }
+
+    /**
+     * 有序的数组可以用碰撞指针
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
+    public static int[] twoSum2(int[] nums, int target) {
+        int i = 0, j = nums.length - 1;
+        int[] result = new int[2];
+        while (i < j) {
+            if (nums[i] + nums[j] == target) {
+                result[0] = i;
+                result[1] = j;
+                return result;
+            } else if (nums[i] + nums[j] < target) {
+                i++;
+            } else {
+                j--;
+            }
+        }
+        return result;
+    }
+
 }
