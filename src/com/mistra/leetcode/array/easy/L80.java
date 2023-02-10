@@ -19,30 +19,6 @@ public class L80 {
     }
 
     public static int removeDuplicates(int[] nums) {
-        int j = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[j] == nums[i]) {
-                if (i - j > 1) {
-                    nums[i] = 0;
-                }
-            } else {
-                j = i;
-            }
-        }
-        j = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != 0) {
-                nums[j] = nums[i];
-                if (i != j) {
-                    nums[i] = 0;
-                }
-                j++;
-            }
-        }
-        return j + 1;
-    }
-
-    public static int removeDuplicates2(int[] nums) {
         int i = 0;
         for (int t : nums) {
             if (i < 2 || nums[i - 2] != t) {
