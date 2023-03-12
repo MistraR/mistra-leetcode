@@ -1,13 +1,11 @@
 package com.mistra.leetcode.other;
 
 /**
- * 实现pow(x, n)，即计算 x 的整数n 次幂函数（即，xn ）。
- * <p>
- * <p>
+ * 实现pow(x, n)，即计算 x 的整数n 次幂函数（即，xn ）
  * 示例 1：
- * <p>
  * 输入：x = 2.00000, n = 10
  * 输出：1024.00000
+ * 二分法，也叫快速幂
  *
  * @author mistra@future.com
  * @date 2023/3/12
