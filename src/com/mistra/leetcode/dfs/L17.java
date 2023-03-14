@@ -47,6 +47,7 @@ public class L17 {
         for (int i = 0; i < s.length(); i++) {
             str.append(s.charAt(i));
             dfs(map, str, digits, index + 1, ans);
+            // 上一个字符串已经添加到ans，接下来拼接新字符串，需要把最后拼接的那个字符去掉，比如拼接了ad，然后去掉d，再拼接ae
             str.deleteCharAt(str.length() - 1);
         }
     }
