@@ -25,12 +25,12 @@ public class EL617 {
     }
 
     public TreeNode dfs(TreeNode root1, TreeNode root2) {
-        if (root1 == null || root2 == null) {
+        if (root1 == null || root2 == null) {// 只要有一个为null就可以返回另一个不为null的作为上层的子节点
             return root1 == null ? root2 : root1;
         }
-        root1.setVal(root1.getVal() + root2.getVal());
-        root1.setLeft(dfs(root1.getLeft(), root2.getLeft()));
-        root1.setRight(dfs(root1.getRight(), root2.getRight()));
-        return root1;
+        root1.setVal(root1.getVal() + root2.getVal());// 合并值
+        root1.setLeft(dfs(root1.getLeft(), root2.getLeft()));// 求左节点
+        root1.setRight(dfs(root1.getRight(), root2.getRight()));// 求右节点
+        return root1;// 返回作为上层的子节点
     }
 }
