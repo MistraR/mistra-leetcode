@@ -1,11 +1,11 @@
 package com.mistra.leetcode.tree;
 
+import com.mistra.leetcode.common.TreeNode;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
-
-import com.mistra.leetcode.common.TreeNode;
 
 /**
  * @author Mistra

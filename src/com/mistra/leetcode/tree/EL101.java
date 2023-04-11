@@ -14,7 +14,6 @@ public class EL101 {
             return true;
         }
         return recursion(root.getLeft(), root.getRight());
-
     }
 
     public boolean recursion(TreeNode left, TreeNode right) {

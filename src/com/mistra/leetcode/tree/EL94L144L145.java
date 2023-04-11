@@ -31,8 +31,8 @@ public class EL94L144L145 {
     public void preorderRecursion(TreeNode root, List<Integer> res) {
         if (root != null) {
             res.add(root.getVal());
-            postorderRecursion(root.getLeft(), res);
-            postorderRecursion(root.getRight(), res);
+            preorderRecursion(root.getLeft(), res);
+            preorderRecursion(root.getRight(), res);
         }
     }
 
