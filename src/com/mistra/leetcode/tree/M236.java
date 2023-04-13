@@ -7,7 +7,7 @@ import com.mistra.leetcode.common.TreeNode;
  * @date 2023/4/13
  * @ Description: 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先
  */
-public class ML236 {
+public class M236 {
 
     /**
      * 从上往下找

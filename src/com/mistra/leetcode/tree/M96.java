@@ -11,7 +11,7 @@ import java.util.HashMap;
  * 动态规划
  * 递归
  */
-public class ML96 {
+public class M96 {
 
     HashMap<Integer, Integer> map = new HashMap<>();
 

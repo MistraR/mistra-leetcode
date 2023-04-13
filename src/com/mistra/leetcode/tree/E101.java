@@ -7,7 +7,7 @@ import com.mistra.leetcode.common.TreeNode;
  * @date 2023/4/10
  * @ Description:给你一个二叉树的根节点 root ， 检查它是否轴对称。
  */
-public class EL101 {
+public class E101 {
 
     public boolean isSymmetric(TreeNode root) {
         if (root == null) {
