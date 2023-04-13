@@ -19,6 +19,8 @@ package com.mistra.leetcode.dp;
  * 输出：4
  * 解释：偷窃 1 号房屋 (金额 = 1) ，然后偷窃 3 号房屋 (金额 = 3)。
  * 偷窃到的最高金额 = 1 + 3 = 4 。
+ *
+ * 关联213 337
  */
 public class M198 {
 
@@ -32,7 +34,7 @@ public class M198 {
         dp[0] = 0;//没有房子，所以 f(0)=0
         dp[1] = nums[0];//只有1间房子
         for (int i = 2; i <= length; i++) {
-            dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i] - 1);//f(k)=max{f(k−1),Hk−1+f(k−2)} 假如3间房子，结果则为只偷第2间或者偷第1+第3间的最大值
+            dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i - 1]);//f(k)=max{f(k−1),Hk−1+f(k−2)} 假如3间房子，结果则为只偷第2间或者偷第1+第3间的最大值
         }
         return dp[length];
     }
