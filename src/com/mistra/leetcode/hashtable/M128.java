@@ -1,4 +1,4 @@
-package com.mistra.leetcode.hash;
+package com.mistra.leetcode.hashtable;
 
 import java.util.HashSet;
 
