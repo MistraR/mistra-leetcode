@@ -26,9 +26,9 @@ public class M139 {
 
     public static void main(String[] args) {
         List<String> wordDict = new ArrayList<>();
-        wordDict.add("apple");
-        wordDict.add("pen");
-        System.out.println(wordBreak("applepenapple", wordDict));
+        wordDict.add("leet");
+        wordDict.add("code");
+        System.out.println(wordBreak("leetcode", wordDict));
     }
 
     public static boolean wordBreak(String s, List<String> wordDict) {
@@ -39,6 +39,8 @@ public class M139 {
             for (int j = 0; j < i; j++) {
                 // [0, i - 1] 的字符串可被拆分，当前仅当任一子串 [0, j - 1] 及 [j, i - 1] 可被拆分
                 if (dp[j] && wordDict.contains(s.substring(j, i))) {
+                    // dp[j]==true表示前j位字符串可以由wordDict的字符串拼接得到
+                    // 只需要再找到s.substring(j, i)在wordDict内就可以了
                     dp[i] = true;
                     break;
                 }
