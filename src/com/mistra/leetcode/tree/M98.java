@@ -16,7 +16,7 @@ import com.mistra.leetcode.common.TreeNode;
  *
  * 二叉搜索树的中序遍历一定是升序的
  */
-public class ML98 {
+public class M98 {
 
     long pre = Long.MIN_VALUE;
 

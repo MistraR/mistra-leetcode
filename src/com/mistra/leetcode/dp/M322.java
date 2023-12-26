@@ -1,4 +1,4 @@
-package com.mistra.leetcode.dp.mid;
+package com.mistra.leetcode.dp;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ import java.util.Arrays;
  * @author mistra@future.com
  * @date 2023/3/11
  */
-public class L322 {
+public class M322 {
 
     public static void main(String[] args) {
 //        System.out.println(coinChange(new int[]{1, 2, 5}, 11));

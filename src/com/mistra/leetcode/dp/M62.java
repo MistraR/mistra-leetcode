@@ -1,4 +1,4 @@
-package com.mistra.leetcode.dp.mid;
+package com.mistra.leetcode.dp;
 
 /**
  * 一个机器人位于一个 m x n网格的左上角 （起始点在下图中标记为 “Start” ）。
@@ -8,7 +8,7 @@ package com.mistra.leetcode.dp.mid;
  * @author mistra@future.com
  * @date 2023/3/10
  */
-public class L62 {
+public class M62 {
 
     public static void main(String[] args) {
         System.out.println(uniquePaths(3, 7));

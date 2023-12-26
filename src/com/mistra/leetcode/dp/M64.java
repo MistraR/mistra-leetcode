@@ -1,4 +1,4 @@
-package com.mistra.leetcode.dp.mid;
+package com.mistra.leetcode.dp;
 
 /**
  * 给定一个包含非负整数的 m x n 网格 grid ，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
@@ -7,7 +7,7 @@ package com.mistra.leetcode.dp.mid;
  * @author mistra@future.com
  * @date 2023/3/10
  */
-public class L64 {
+public class M64 {
 
     public static void main(String[] args) {
         System.out.println(minPathSum(new int[][]{new int[]{1, 2, 3}, new int[]{4, 5, 6}}));

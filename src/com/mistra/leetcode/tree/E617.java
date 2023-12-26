@@ -15,7 +15,7 @@ import com.mistra.leetcode.common.TreeNode;
  *
  * 注意: 合并过程必须从两个树的根节点开始。
  */
-public class EL617 {
+public class E617 {
 
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if (root1 == null || root2 == null) {

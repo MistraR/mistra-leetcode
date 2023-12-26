@@ -1,4 +1,4 @@
-package com.mistra.leetcode.dp.mid;
+package com.mistra.leetcode.dp;
 
 /**
  * 给你一个整数 n ，返回 和为 n 的完全平方数的最少数量 。
@@ -15,7 +15,7 @@ package com.mistra.leetcode.dp.mid;
  * @author mistra@future.com
  * @date 2023/3/6
  */
-public class L279 {
+public class M279 {
 
     public static void main(String[] args) {
         System.out.println(numSquares(13));
