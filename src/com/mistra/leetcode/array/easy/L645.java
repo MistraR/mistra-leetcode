@@ -1,6 +1,7 @@
 package com.mistra.leetcode.array.easy;
 
 import java.util.Arrays;
+import java.util.TreeSet;
 
 /**
  * @author Mistra
@@ -32,6 +33,23 @@ public class L645 {
             }
         }
         return new int[] {dup, nums[nums.length - 1] != nums.length ? nums.length : missing};
+    }
+
+    public int[] findErrorNums2(int[] nums) {
+        TreeSet<Integer> set = new TreeSet();
+        for(int i=1;i<=nums.length;i++){
+            set.add(i);
+        }
+        int[] result=new int[2];
+        for(int i=0;i<nums.length;i++){
+            if(set.contains(nums[i])){
+                set.remove(nums[i]);
+            }else{
+                result[0]=nums[i];
+            }
+        }
+        result[1]=set.last();
+        return result;
     }
 
 }
